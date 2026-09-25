@@ -1,0 +1,12 @@
+(let fact)
+(set fact ; bind existing to function
+    (func (lst x) 
+        (ifelse (lt x 1)
+            x
+            (mul x (fact x))
+        )
+    )
+)
+
+(fact 5)
+"this is a completely unrelated string"
